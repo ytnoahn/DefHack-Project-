@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Interactive Animations with JavaScript and CSS</title>
+  <meta name="description" content="Interactive Animations with JavaScript and CSS">
+  <!-- Project inspired by Scott Means - LinkedIn Learning  -->
+  <meta name="author" content="Scott Means">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <hp-content>
+    <hp-presentation>
+      <hp-slide class="active">
+        <hp-title>Which shape</hp-title>
+        <hp-chooser>
+          <img class="pic" src="images/triangle.svg"/>
+          <img class="pic" src="images/circle.svg"/>
+          <img class="pic" src="images/diamond.svg"/>
+          <img class="pic" src="images/square.svg"/>
+        </hp-chooser>
+        <hp-title>doesn't belong?</hp-title>
+      </hp-slide>
+      <hp-slide data-autoadvance="3500">
+        <hp-title>Which shape</hp-title>
+        <hp-chooser class="chosen animate">
+          <img src="images/triangle.svg"/>
+          <img class="chosen" src="images/circle.svg"/>
+          <img src="images/diamond.svg"/>
+          <img src="images/square.svg"/>
+        </hp-chooser>
+        <hp-title>doesn't belong?</hp-title>
+      </hp-slide>
+    </hp-presentation>
+  </hp-content>
+  <script src="main.js"></script>
+</body>
+</html>
